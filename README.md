@@ -54,6 +54,22 @@ flowchart TD
         H --> I
         I --> J[Downloadable Audit CSV]
     end
+    %% Color Palettes (Compatible with GitHub Dark & Light Mode)
+    classDef ingestion fill:#1e293b,stroke:#475569,stroke-width:1.5px,color:#f8fafc;
+    classDef ai fill:#312e81,stroke:#6366f1,stroke-width:2px,color:#e0e7ff;
+    classDef join fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#f0f9ff;
+    classDef success fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#ecfdf5;
+    classDef fee fill:#78350f,stroke:#f59e0b,stroke-width:2px,color:#fffbeb;
+    classDef danger fill:#7f1d1d,stroke:#ef4444,stroke-width:2px,color:#fef2f2;
+    classDef ui fill:#0c4a6e,stroke:#0284c7,stroke-width:2px,color:#f0f9ff;
+
+    class A,B ingestion;
+    class C,D ai;
+    class E join;
+    class F success;
+    class G fee;
+    class H danger;
+    class I,J ui;
 ```
 
 ---
