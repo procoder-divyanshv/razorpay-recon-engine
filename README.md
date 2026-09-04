@@ -27,3 +27,14 @@ This engine decouples **unstructured data parsing** from **deterministic financi
    pip install fastapi uvicorn pandas pydantic openai python-multipart
    export GROQ_API_KEY="your-key"
    uvicorn main:app --reload
+
+3. Frontend:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+4. Running Mock Data
+   ```bash
+   python3 mock_data/generate_mock_data.py
+
+   (Upload mock_data/internal_ledger.csv and mock_data/bank_statement.csv into the dashboard to test the pipeline.)
