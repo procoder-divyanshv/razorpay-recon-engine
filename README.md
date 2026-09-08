@@ -1,6 +1,17 @@
 # ReconZero: Zero-Hallucination Financial Reconciliation Engine
 
-### Track: AI Finance Controller | Razorpay AI Buildathon 2026
+### Track: AI Finance Controller | Razorpay AI Builder 2026
+
+## 🌐 Live Cloud Deployment
+
+* **Frontend Dashboard (Vercel):** [https://razorpay-recon-engine.vercel.app/]
+* **Backend API (Render):** [https://reconzero-engine-backend.onrender.com]
+* **Interactive Swagger API Docs:** [https://reconzero-engine-backend.onrender.com/docs]
+* **Health Check Endpoint:** [https://reconzero-engine-backend.onrender.com/]
+
+> **Note on Free Cloud Tier:** The backend is hosted on Render's free tier. If the instance is idling, please allow **30–50 seconds** for the initial spin-up on first request.
+
+---
 
 ## 📌 Core Philosophy: "Accuracy Over Everything"
 
