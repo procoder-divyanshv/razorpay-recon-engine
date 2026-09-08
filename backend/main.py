@@ -216,7 +216,8 @@ async def parse_batch_with_llm(batch: list[dict]) -> dict[int, str]:
 async def health_check():
     return {"status": "healthy", "version": "2.1.0-hybrid"}
 
-@app.post("/reconcile")
+@app.post("/reconcile") 
+@app.post("/reconcile/")
 async def reconcile_data(ledger: UploadFile = File(...), bank: UploadFile = File(...)):
     try:
         df_ledger = pd.read_csv(BytesIO(await ledger.read()))

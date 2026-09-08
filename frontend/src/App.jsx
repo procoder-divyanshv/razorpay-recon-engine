@@ -377,7 +377,7 @@ import {
   Zap, ArrowDown, ArrowUp, Info 
 } from 'lucide-react'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/+$/, '')
 export default function App() {
   const [theme, setTheme] = useState('dark')
   const [mainView, setMainView] = useState('ingestion')
