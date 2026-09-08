@@ -377,6 +377,7 @@ import {
   Zap, ArrowDown, ArrowUp, Info 
 } from 'lucide-react'
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 export default function App() {
   const [theme, setTheme] = useState('dark')
   const [mainView, setMainView] = useState('ingestion')
@@ -420,7 +421,7 @@ export default function App() {
       formData.append('ledger', ledger)
       formData.append('bank', bank)
 
-      const res = await fetch('http://localhost:8000/reconcile', { method: 'POST', body: formData })
+      const res = await fetch(`${API_BASE_URL}/reconcile`, { method: 'POST', body: formData })
       if (!res.ok) {
         const errData = await res.json()
         alert("Backend Error: " + JSON.stringify(errData))
